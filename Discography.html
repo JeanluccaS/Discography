@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My discography</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        a:hover{
+            color: chartreuse;
+        }
+        a:visited{
+            color: darkorange;
+        }
+        table,td{
+            /*comentarios*/
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 6px;
+        }
+        thead{
+            background-color: darkgrey;
+            color: white;
+        }
+
+        th:hover{   /* se utiliza para al pasar por arriba con el mouse, ocurra algo*/
+            color:blueviolet;
+        }
+        th:nth-child(3){
+            width: 200px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        tbody>tr:nth-child(odd){
+            background-color: darkolivegreen;
+        }
+        img{
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
-    <h2>Albums</h2>
-    <table cellpadding=4px cellspacing=0 border="1" >
+    <h1>Albums</h1>
+    <table >
         <thead>
             <tr>
                 <th>Year</th>
@@ -21,28 +58,27 @@
                 <td><a href="https://en.wikipedia.org/wiki/2005">2005</a></td>
                 <td><a href="https://en.wikipedia.org/wiki/System_of_a_Down">System of a Down</a></td>
                 <td><a href="https://en.wikipedia.org/wiki/Mezmerize_(album)">Mezmerize</a></td>
-                <td> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Mezmerize-LP.jpg/220px-Mezmerize-LP.jpg" width="100px"></td>
-            </tr>
-            <tr>
-                <td><a href="https://en.wikipedia.org/wiki/2019">2019</a></td> 
-                <td><a href="https://en.wikipedia.org/wiki/El_Cuarteto_de_Nos">El Cuarteto de Nos</a></td>      
-                <td>Jueves</td>
-                <td> <img src="img/Jueves.jpg" width="100px"></td>
-            </tr>
-            <tr>
-                <td><a href="https://en.wikipedia.org/wiki/2017">2017</a></td>
-                <td><a href="https://en.wikipedia.org/wiki/Imagine_Dragons">Imagine Dragons</a></td>
-                <td><a href="https://en.wikipedia.org/wiki/Evolve_(Imagine_Dragons_album)">Evolve</a></7a></td>
-                <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/ImagineDragonsEvolve.jpg/220px-ImagineDragonsEvolve.jpg" width="100px"></td>
+                <td> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Mezmerize-LP.jpg/220px-Mezmerize-LP.jpg" "></td>
             </tr>
             <tr>
                 <td><a href="https://en.wikipedia.org/wiki/2006">2006</a></td>
                 <td><a href="https://en.wikipedia.org/wiki/Red_Hot_Chili_Peppers">Red Hot Chili Peppers</a></td>
                 <td><a href="https://en.wikipedia.org/wiki/Stadium_Arcadium">Stadium Arcadium</a></td>
-                <td><img src="https://upload.wikimedia.org/wikipedia/en/e/e6/Stadiumarcadium.jpg" width="100px"></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/e/e6/Stadiumarcadium.jpg"></td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/2017">2017</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Imagine_Dragons">Imagine Dragons</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Evolve_(Imagine_Dragons_album)">Evolve</a></7a></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/ImagineDragonsEvolve.jpg/220px-ImagineDragonsEvolve.jpg" ></td>
+            </tr>
+            <tr>
+                <td><a href="https://en.wikipedia.org/wiki/2019">2019</a></td> 
+                <td><a href="https://en.wikipedia.org/wiki/El_Cuarteto_de_Nos">El Cuarteto de Nos</a></td>      
+                <td>Jueves</td>
+                <td> <img src="img/Jueves.jpg" ></td>
             </tr>
         </tbody>
-
     </table>
 </body>
 </html>
